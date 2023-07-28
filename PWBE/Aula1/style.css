@@ -1,0 +1,25 @@
+.menu{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    }.menu .link{
+        text-decoration: none;
+        font-size: 24px;
+        color:aliceblue;
+    }
+    p2{
+        justify-content: space-evenly;
+    }
+    .hamb{
+        display:none;
+    }
+    @media screen and (max-width:800px) {
+        .menu{
+            display:none;
+    
+        }
+        .hamb{
+            display: inline;
+        }
+    }

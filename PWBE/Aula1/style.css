@@ -7,10 +7,28 @@
         text-decoration: none;
         font-size: 24px;
         color:aliceblue;
-    }
-    p2{
-        justify-content: space-evenly;
-    }
+    }}.menu .link{
+    text-decoration: none;
+    font-size: 24px;
+    color:aliceblue;
+}
+}.titulo h1{
+font-size: 50px;
+color: aliceblue;
+}.titulo h2{
+    font-size: 40px;
+    color:red;}
+ .h1{
+    color: rgb(245, 245, 245);
+    text-decoration: none;
+    font-size: 24px;
+}header{
+    margin: 0;
+    background-color:red;
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
     .hamb{
         display:none;
     }

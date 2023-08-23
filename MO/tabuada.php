@@ -54,13 +54,13 @@ function tabuada10() {
     return $n1 *10;
    
 }
-echo "10x1 = " . tabuada1() . "\n";
-echo "10x2 = " . tabuada2() . "\n";
-echo "10x3 = " . tabuada3() . "\n";
-echo "10x4 = " . tabuada4() . "\n";
-echo "10x5 = " . tabuada5() . "\n";
-echo "10x6 = " . tabuada6() . "\n";
-echo "10x7 = " . tabuada7() . "\n";
-echo "10x8 = " . tabuada8() . "\n";
-echo "10x9 = " . tabuada9() . "\n";
-echo "10x10 = " . tabuada10() . "\n";
+echo " = " . tabuada1() . "\n";
+echo " = " . tabuada2() . "\n";
+echo " = " . tabuada3() . "\n";
+echo " = " . tabuada4() . "\n";
+echo " = " . tabuada5() . "\n";
+echo " = " . tabuada6() . "\n";
+echo " = " . tabuada7() . "\n";
+echo " = " . tabuada8() . "\n";
+echo " = " . tabuada9() . "\n";
+echo " = " . tabuada10() . "\n";

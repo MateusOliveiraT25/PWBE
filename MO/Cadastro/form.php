@@ -3,14 +3,19 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "banco";
+$dbname = "cadastro";
 
 // Criar conexão com o BD
 $conexao = mysqli_connect($servername, $username, $password, $dbname);
 
-
+$nome = $_POST['nome'];
+    $endereco = $_POST['endereco'];
+    $email = $_POST['email'];
+    $dataNasc= $_POST['dataNascimento'];
+    // data em formato brasileiro para inserir no MySQL:
+    $data = implode("-", array_reverse(explode("/", $dataNascimento)));
 // Insere os dados na tabela do banco
-$sql = "INSERT INTO clientes (nome, email, dataNascimento, endereco) VALUES ('$nome', '$email', '$dataNascimento', '$endereco')";
+$sql = "INSERT INTO clientes (nome, email, dataNascimento, endereco) VALUES ('$nome', '$email', '$data', '$endereco')";
 
 if (mysqli_query($conexao, $sql)) {
     // Verifica se a inserção foi bem-sucedida

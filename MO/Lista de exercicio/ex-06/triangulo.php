@@ -1,8 +1,8 @@
 <?php
-// ... Outro código ...
+
 
 // Inclua o arquivo verifica_triangulo.php
-include('verifica.php');
+include('verificar.php');
 
-// ... Outro código ...
+
 ?>

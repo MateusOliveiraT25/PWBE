@@ -29,6 +29,6 @@ if ($mes == 1) {
 } elseif ($mes == 12) {
     echo "Dezembro";
 } else {
-    echo "Por favor, insira um número de 1 a 12.";
+    echo "Por favor, insira um número válido de 1 a 12.";
 }
 ?>

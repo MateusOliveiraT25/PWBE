@@ -2,7 +2,7 @@
 
 
 // Inclua o arquivo verifica_triangulo.php
-include('verificar.php');
+include('verifica.php');
 
 
 ?>

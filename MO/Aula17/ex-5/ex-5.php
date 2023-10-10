@@ -1,5 +1,5 @@
 <?php
-$n = isset($_POST['n']) ? floatval($_POST['n']) : 0; // Valide e obtenha o valor de M² como um número float
+$num = isset($_POST['n']) ? floatval($_POST['num']) : 0; // Valide e obtenha o valor de M² como um número float
   // qualquer número
 
 function verificarParImpar($num) {

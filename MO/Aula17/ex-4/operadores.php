@@ -1,66 +1,33 @@
 <?php
-//$n1 = 10;
-//$n2 = 20;
-$base = $n1;
-$expoente = $n2;
-$resultado = potencia($base, $expoente);
-// Função para calcular a média
-function soma() {
-    global $n1, $n2;
-    return $n1 + $n2;
-}
+$num1 = isset($_POST['n1']) ? floatval($_POST['n1']) : 0;
+$num2 = isset($_POST['n2']) ? floatval($_POST['n2']) : 0;
+echo "Escolha a operação aritmética (1) Soma, (2) Subtração, (3) Divisão e (4) Multiplicação? ";
+$opA  = isset($_POST['n3']) ? floatval($_POST['n3']) : 0;
 
-function sub() {
-    global $n1, $n2;
-    return $n1 - $n2;
-}
 
-function div() {
-    global $n1, $n2;
-    if ($n2 != 0) {
-        return $n1 / $n2;
-    } else {
-        return "Divisão por zero não é permitida.";
+
+if ($opA == 3 && $num2 == 0) {
+    echo "Erro: Não é possível dividir por zero.";
+} else {
+    switch ($opA) {
+        case 1:
+            echo "Resultado da Soma é: " . ($num1 + $num2);
+            break;
+        case 2:
+            echo "Resultado da Subtração é: " . ($num1 - $num2);
+            break;
+        case 3:
+            echo "Resultado da Divisão é: " . ($num1 / $num2);
+            break;
+        case 4:
+            echo "Resultado da Multiplicação é: " . ($num1 * $num2);
+            break;
+        default:
+            echo "Opção inválida";
     }
 }
 
-function mult() {
-    global $n1, $n2;
-    return $n1 * $n2;
-}
-function quad1() {
-    global $n1;
-    return $n1 * $n1;
-     
-}
-function potencia($n1, $n2) {
-    $resultado =1 ;
-    $contador = 0;
-        while ($contador < $n2) {
-            $resultado *= $n1;
-            $contador++;
-        }
-    
-        return $resultado;
-    }
-    function calcularFatorial($n2) {
-        if ($n2 <= 1) {
-        return 1;
-        } else {
-       return $n2 * calcularFatorial($n2 - 1);
-       }
-      
-       }
-       $fatorial = calcularFatorial($n2); 
-    
 
-echo "Soma: " . soma() . "\n";
-echo "Subtração: " . sub() . "\n";
-echo "Divisão: " . div() . "\n";
-echo "Multiplicação: " . mult() . "\n";
-echo "Quadrado: " . quad1() . "\n";
-echo "Potencia: $resultado \n";
-echo "Fatorial: $fatorial";
 
 ?>
 

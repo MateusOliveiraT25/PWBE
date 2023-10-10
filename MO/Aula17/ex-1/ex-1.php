@@ -34,6 +34,22 @@ crescente($n1, $n2);
 ?>
 
 
+<?php //ex-7
+$a = isset($_POST['a']) ? floatval($_POST['a']) : 0;
+$b = isset($_POST['b']) ? floatval($_POST['b']) : 0;
+
+function crescente($a, $b) {
+    if ($a > $b) {
+        echo 'Maior que B';
+    } else {
+        echo 'Maior que A';
+    }
+}
+
+// Chamar a função
+crescente($a, $b);
+?>
+
 
 
 

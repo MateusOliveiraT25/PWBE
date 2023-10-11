@@ -50,8 +50,21 @@ function crescente($a, $b) {
 crescente($a, $b);
 ?>
 
+<?php //ex-9
+$nome = isset($_POST['nome'])? $_POST['nome'] : ''; 
+$idade = isset($_POST['idade']) ? floatval($_POST['idade']) : 0;
 
+function crescente($idade,$nome) {
+     if ($idade > 18) {
+        echo $nome . ' é maior que 18';
+    } else {
+        echo $nome . ' é menor ou igual a 18';
+    }
+}
 
+// Chamar a função
+crescente($idade,$nome;
+?>
 
 
 */
